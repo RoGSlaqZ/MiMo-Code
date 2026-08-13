@@ -59,7 +59,7 @@ export const dict = {
   "tui.tips.doc": "Выполните {highlight}/doc{/highlight}, чтобы открыть пользовательскую документацию",
   "tui.tips.free_models": "Бесплатные модели доступны ограниченное время — попробуйте их сейчас!",
   "tui.tips.free_api_sunset":
-    "Сервис бесплатного API завершён. Выполните {highlight}/login{/highlight}, чтобы войти. Оформите подписку на MiMo Token Plan или настройте сторонний API для использования MiMo Code.",
+    "Сервис бесплатного API завершён. Выполните {highlight}/login{/highlight}, чтобы войти. Оформите подписку на MiMo Token Plan или настройте сторонний API для использования Viking Code.",
   "tui.tips.multi_skills":
     "Комбинируйте несколько {highlight}/skill-name{/highlight} в одном сообщении, чтобы использовать несколько Skills одновременно",
   "tui.tips.ask_slash_commands":
@@ -242,7 +242,7 @@ export const dict = {
   "tui.tips.username_toggle":
     "Переключайте отображение имени пользователя через палитру команд ({highlight}Ctrl+P{/highlight})",
   "tui.tips.zen":
-    "Используйте {highlight}/connect{/highlight} с MiMo Code для подобранных и протестированных моделей",
+    "Используйте {highlight}/connect{/highlight} с Viking Code для подобранных и протестированных моделей",
   "tui.tips.agents_md":
     "Закоммитьте {highlight}AGENTS.md{/highlight} вашего проекта в Git для общего доступа в команде",
   "tui.tips.review":
@@ -402,7 +402,7 @@ export const dict = {
   "tui.dialog.agreement.confirm": "Принять и продолжить",
   "tui.dialog.free_api_sunset.title": "Сервис бесплатного API завершён",
   "tui.dialog.free_api_sunset.message":
-    "Выполните /login, чтобы войти. Оформите подписку на MiMo Token Plan или настройте сторонний API для использования MiMo Code.",
+    "Выполните /login, чтобы войти. Оформите подписку на MiMo Token Plan или настройте сторонний API для использования Viking Code.",
   "tui.command.consent.revoke.title": "Отозвать согласие на бесплатную модель",
   "tui.consent.revoked": "Согласие на бесплатную модель отозвано — потребуется принять снова",
   "tui.dialog.select.placeholder": "Поиск",
@@ -603,7 +603,7 @@ export const dict = {
   // Workspace trust
   "trust.title": "Доступ к рабочему пространству:",
   "trust.safety_check": "Проверка безопасности: это проект, который вы создали или которому доверяете? (Ваш собственный код, известный open source проект или работа вашей команды). Если нет, сначала проверьте содержимое этой папки.",
-  "trust.capabilities": "MiMo Code сможет читать, редактировать и выполнять файлы здесь.",
+  "trust.capabilities": "Viking Code сможет читать, редактировать и выполнять файлы здесь.",
   "trust.plugin_warn": "Если в этом каталоге есть вредоносные плагины, они могут выполнять произвольный код, читать, изменять или похищать ваши файлы.",
   "trust.option.yes": "Да, я доверяю этой папке",
   "trust.option.no": "Нет, выйти",
@@ -617,7 +617,7 @@ export const dict = {
   "trust.dangerous.option.no": "Выйти (рекомендуется)",
   "skip_permissions.title": "ПРЕДУПРЕЖДЕНИЕ: режим обхода разрешений",
   "skip_permissions.body":
-    "Вы запустили с --dangerously-skip-permissions. MiMo Code будет читать, редактировать и выполнять файлы, а также запускать команды оболочки БЕЗ запроса подтверждения. Действуют только правила, которые вы явно запретили (deny) в конфигурации. Вы несёте полную ответственность за все его действия.",
+    "Вы запустили с --dangerously-skip-permissions. Viking Code будет читать, редактировать и выполнять файлы, а также запускать команды оболочки БЕЗ запроса подтверждения. Действуют только правила, которые вы явно запретили (deny) в конфигурации. Вы несёте полную ответственность за все его действия.",
   "skip_permissions.plugin_warn":
     "В этом режиме вредоносный запрос, файл или плагин может выполнить произвольные команды и изменить или похитить ваши данные без какого-либо подтверждения.",
   "skip_permissions.root_warn":

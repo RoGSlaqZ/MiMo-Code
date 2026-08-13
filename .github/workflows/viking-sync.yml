@@ -1,0 +1,93 @@
+name: Viking Sync
+
+# Hält Viking Code automatisch auf dem Stand von Xiaomis MiMo Code.
+#
+# Bauweise (wichtig zu verstehen, bevor jemand hier etwas ändert):
+#
+#   main    = unveränderte Spiegelung von XiaomiMiMo/MiMo-Code.
+#             Hier wird NIE etwas Eigenes committet, deshalb kann das
+#             Nachziehen nie in einem Konflikt enden.
+#
+#   viking  = wird bei jedem Lauf frisch aus main gebaut, danach trägt
+#             script/viking-branding.py das Branding auf. Der Branch wird
+#             force-gepusht — seine Historie ist bewusst wegwerfbar.
+#
+# Daraus folgt: eigene Änderungen NICHT direkt auf viking committen, die
+# wären beim nächsten Lauf weg. Dauerhafte Anpassungen gehören ins
+# Branding-Skript, dann werden sie jedes Mal neu angewendet.
+
+on:
+  schedule:
+    - cron: "0 4 * * *" # täglich 04:00 UTC (06:00 deutscher Sommerzeit)
+  workflow_dispatch: # zusätzlich jederzeit von Hand startbar
+
+permissions:
+  contents: write
+
+concurrency:
+  group: viking-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Viking-Branch auschecken
+        uses: actions/checkout@v4
+        with:
+          ref: viking
+          fetch-depth: 0
+
+      - name: Eigene Dateien sichern
+        # Skript und Workflow liegen auf viking, der gleich auf den
+        # Upstream-Stand zurückgesetzt wird — vorher in Sicherheit bringen.
+        run: |
+          mkdir -p /tmp/viking-tooling/.github/workflows /tmp/viking-tooling/script
+          cp .github/workflows/viking-sync.yml /tmp/viking-tooling/.github/workflows/
+          cp script/viking-branding.py /tmp/viking-tooling/script/
+
+      - name: Original holen
+        run: |
+          git remote add upstream https://github.com/XiaomiMiMo/MiMo-Code.git
+          git fetch upstream --prune
+          echo "Upstream-Stand: $(git rev-parse --short upstream/main)"
+
+      - name: main spiegeln
+        # Reiner Fast-Forward-Push, ohne main lokal auszuchecken.
+        run: git push origin upstream/main:refs/heads/main
+
+      - name: Viking aus main neu aufbauen
+        run: |
+          git reset --hard upstream/main
+          cp -r /tmp/viking-tooling/. .
+
+      - name: Branding auftragen
+        run: python3 script/viking-branding.py
+
+      - name: Ergebnis prüfen
+        # Bricht ab, wenn das Branding nicht vollständig griff — lieber ein
+        # roter Lauf als ein still halb umbenanntes Viking Code.
+        run: python3 script/viking-branding.py --check
+
+      - name: Veröffentlichen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen — Viking Code ist bereits aktuell."
+            exit 0
+          fi
+          git commit -m "Viking Code: Abgleich mit MiMo Code $(git rev-parse --short upstream/main)"
+          git push --force origin HEAD:refs/heads/viking
+          echo "Viking-Branch aktualisiert."
+
+      - name: Zusammenfassung
+        if: always()
+        run: |
+          {
+            echo "### Viking Sync"
+            echo ""
+            echo "- Upstream: \`$(git rev-parse --short upstream/main 2>/dev/null || echo unbekannt)\`"
+            echo "- Viking:   \`$(git rev-parse --short HEAD)\`"
+          } >> "$GITHUB_STEP_SUMMARY"

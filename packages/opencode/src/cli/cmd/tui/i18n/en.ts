@@ -54,7 +54,7 @@ export const dict: Record<string, string> = {
   "tui.tips.doc": "Run {highlight}/doc{/highlight} to open the user documentation",
   "tui.tips.free_models": "Free models are available for a limited time — try them now!",
   "tui.tips.free_api_sunset":
-    "The free API service has ended. Run {highlight}/login{/highlight} to sign in. Subscribe to the MiMo Token Plan or configure a third-party API to use MiMo Code.",
+    "The free API service has ended. Run {highlight}/login{/highlight} to sign in. Subscribe to the MiMo Token Plan or configure a third-party API to use Viking Code.",
   "tui.tips.multi_skills":
     "Combine multiple {highlight}/skill-name{/highlight} triggers in a single message to use several skills together",
   "tui.tips.ask_slash_commands":
@@ -171,7 +171,7 @@ export const dict: Record<string, string> = {
   "tui.tips.scroll_accel":
     "Enable {highlight}scroll_acceleration{/highlight} in {highlight}tui.json{/highlight} for smooth macOS-style scrolling",
   "tui.tips.username_toggle": "Toggle username display in chat via command palette ({highlight}Ctrl+P{/highlight})",
-  "tui.tips.zen": "Use {highlight}/connect{/highlight} with MiMo Code for curated, tested models",
+  "tui.tips.zen": "Use {highlight}/connect{/highlight} with Viking Code for curated, tested models",
   "tui.tips.agents_md": "Commit your project's {highlight}AGENTS.md{/highlight} file to Git for team sharing",
   "tui.tips.review": "Use {highlight}/review{/highlight} to review uncommitted changes, branches, or PRs",
   "tui.tips.help": "Run {highlight}/help{/highlight} or {highlight}Ctrl+X H{/highlight} to show the help dialog",
@@ -354,7 +354,7 @@ export const dict: Record<string, string> = {
   "tui.dialog.agreement.confirm": "Agree & Continue",
   "tui.dialog.free_api_sunset.title": "Free API service ended",
   "tui.dialog.free_api_sunset.message":
-    "Run /login to sign in. Subscribe to the MiMo Token Plan or configure a third-party API to use MiMo Code.",
+    "Run /login to sign in. Subscribe to the MiMo Token Plan or configure a third-party API to use Viking Code.",
   "tui.command.consent.revoke.title": "Revoke free-model agreement",
   "tui.consent.revoked": "Free-model agreement revoked — you'll be asked to agree again",
   "tui.dialog.select.placeholder": "Search",
@@ -567,7 +567,7 @@ export const dict: Record<string, string> = {
   // Workspace trust
   "trust.title": "Accessing workspace:",
   "trust.safety_check": "Quick safety check: Is this a project you created or one you trust? (Like your own code, a well-known open source project, or work from your team). If not, take a moment to review what's in this folder first.",
-  "trust.capabilities": "MiMo Code will be able to read, edit, and execute files here.",
+  "trust.capabilities": "Viking Code will be able to read, edit, and execute files here.",
   "trust.plugin_warn": "If malicious plugins exist in this directory, they can execute arbitrary code, read, modify, or exfiltrate your files.",
   "trust.option.yes": "Yes, I trust this folder",
   "trust.option.no": "No, exit",
@@ -581,7 +581,7 @@ export const dict: Record<string, string> = {
   "trust.dangerous.option.no": "Exit (recommended)",
   "skip_permissions.title": "WARNING: Bypass Permissions mode",
   "skip_permissions.body":
-    "You started with --dangerously-skip-permissions. MiMo Code will read, edit, and execute files and run shell commands WITHOUT asking for approval. Only rules you have explicitly denied in config are still enforced. You are solely responsible for anything it does.",
+    "You started with --dangerously-skip-permissions. Viking Code will read, edit, and execute files and run shell commands WITHOUT asking for approval. Only rules you have explicitly denied in config are still enforced. You are solely responsible for anything it does.",
   "skip_permissions.plugin_warn":
     "In this mode a malicious prompt, file, or plugin can run arbitrary commands, and modify or exfiltrate your data without any confirmation.",
   "skip_permissions.root_warn":

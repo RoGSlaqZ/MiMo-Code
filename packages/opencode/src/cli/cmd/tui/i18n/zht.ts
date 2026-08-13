@@ -57,7 +57,7 @@ export const dict = {
   "tui.tips.doc": "執行 {highlight}/doc{/highlight} 開啟使用文件",
   "tui.tips.free_models": "限時提供免費模型中，立即體驗！",
   "tui.tips.free_api_sunset":
-    "免費 API 服務已終止。請使用 {highlight}/login{/highlight} 登入，歡迎訂閱 MiMo Token Plan 或設定第三方 API 後使用 MiMo Code。",
+    "免費 API 服務已終止。請使用 {highlight}/login{/highlight} 登入，歡迎訂閱 MiMo Token Plan 或設定第三方 API 後使用 Viking Code。",
   "tui.tips.multi_skills":
     "在同一則訊息中輸入多個 {highlight}/skill-name{/highlight} 可同時組合使用多個 Skills",
   "tui.tips.ask_slash_commands":
@@ -164,7 +164,7 @@ export const dict = {
   "tui.tips.scroll_accel":
     "在 {highlight}tui.json{/highlight} 中啟用 {highlight}scroll_acceleration{/highlight} 享受平滑捲動",
   "tui.tips.username_toggle": "透過指令面板（{highlight}Ctrl+P{/highlight}）切換對話中使用者名稱的顯示",
-  "tui.tips.zen": "搭配 MiMo Code 使用 {highlight}/connect{/highlight} 選用經過測試的精選模型",
+  "tui.tips.zen": "搭配 Viking Code 使用 {highlight}/connect{/highlight} 選用經過測試的精選模型",
   "tui.tips.agents_md": "把專案中的 {highlight}AGENTS.md{/highlight} 提交到 Git 與團隊共享",
   "tui.tips.review": "用 {highlight}/review{/highlight} 審閱未提交變更、分支或 PR",
   "tui.tips.help": "執行 {highlight}/help{/highlight} 或 {highlight}Ctrl+X H{/highlight} 顯示說明對話框",
@@ -377,7 +377,7 @@ export const dict = {
   "tui.dialog.agreement.confirm": "同意並繼續",
   "tui.dialog.free_api_sunset.title": "免費 API 服務已終止",
   "tui.dialog.free_api_sunset.message":
-    "請使用 /login 登入，歡迎訂閱 MiMo Token Plan 或設定第三方 API 後使用 MiMo Code。",
+    "請使用 /login 登入，歡迎訂閱 MiMo Token Plan 或設定第三方 API 後使用 Viking Code。",
   "tui.command.consent.revoke.title": "撤銷免費模型協議",
   "tui.consent.revoked": "已撤銷免費模型協議 — 下次使用時將再次請求同意",
   "tui.dialog.select.placeholder": "搜尋",
@@ -557,7 +557,7 @@ export const dict = {
   // Workspace trust
   "trust.title": "存取工作區：",
   "trust.safety_check": "安全確認：這是你自己建立或信任的專案嗎？（如你自己的程式碼、知名開源專案或團隊內部專案）。如果不是，請先檢查此目錄下的內容。",
-  "trust.capabilities": "MiMo Code 將能夠讀取、編輯和執行此目錄中的檔案。",
+  "trust.capabilities": "Viking Code 將能夠讀取、編輯和執行此目錄中的檔案。",
   "trust.plugin_warn": "如果此目錄中存在惡意外掛程式，它們可以執行任意程式碼、讀取、修改或竊取你的檔案。",
   "trust.option.yes": "是的，我信任此目錄",
   "trust.option.no": "否，退出",

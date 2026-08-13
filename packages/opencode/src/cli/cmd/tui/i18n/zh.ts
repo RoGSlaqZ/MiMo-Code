@@ -57,7 +57,7 @@ export const dict = {
   "tui.tips.doc": "运行 {highlight}/doc{/highlight} 打开使用文档",
   "tui.tips.free_models": "限时提供免费模型中，立即体验！",
   "tui.tips.free_api_sunset":
-    "免费 API 服务已终止。请使用 {highlight}/login{/highlight} 登录，欢迎订阅MiMo Token Plan或配置第三方 API 后使用 MiMo Code。",
+    "免费 API 服务已终止。请使用 {highlight}/login{/highlight} 登录，欢迎订阅MiMo Token Plan或配置第三方 API 后使用 Viking Code。",
   "tui.tips.multi_skills":
     "在同一条消息中输入多个 {highlight}/skill-name{/highlight} 可以同时组合使用多个 Skills",
   "tui.tips.ask_slash_commands":
@@ -164,7 +164,7 @@ export const dict = {
   "tui.tips.scroll_accel":
     "在 {highlight}tui.json{/highlight} 中开启 {highlight}scroll_acceleration{/highlight} 享受平滑滚动",
   "tui.tips.username_toggle": "通过命令面板（{highlight}Ctrl+P{/highlight}）切换聊天中用户名的显示",
-  "tui.tips.zen": "搭配 MiMo Code 使用 {highlight}/connect{/highlight} 选用经过测试的精选模型",
+  "tui.tips.zen": "搭配 Viking Code 使用 {highlight}/connect{/highlight} 选用经过测试的精选模型",
   "tui.tips.agents_md": "把项目里的 {highlight}AGENTS.md{/highlight} 提交到 Git 与团队共享",
   "tui.tips.review": "用 {highlight}/review{/highlight} 审阅未提交改动、分支或 PR",
   "tui.tips.help": "运行 {highlight}/help{/highlight} 或 {highlight}Ctrl+X H{/highlight} 显示帮助对话框",
@@ -377,7 +377,7 @@ export const dict = {
   "tui.dialog.agreement.confirm": "同意并继续",
   "tui.dialog.free_api_sunset.title": "免费 API 服务已终止",
   "tui.dialog.free_api_sunset.message":
-    "请使用 /login 登录，欢迎订阅MiMo Token Plan或配置第三方 API 后使用 MiMo Code。",
+    "请使用 /login 登录，欢迎订阅MiMo Token Plan或配置第三方 API 后使用 Viking Code。",
   "tui.command.consent.revoke.title": "撤销免费模型协议",
   "tui.consent.revoked": "已撤销免费模型协议 — 下次使用时将再次请求同意",
   "tui.dialog.select.placeholder": "搜索",
@@ -588,7 +588,7 @@ export const dict = {
   // Workspace trust
   "trust.title": "访问工作区：",
   "trust.safety_check": "安全确认：这是你自己创建或信任的项目吗？（如你自己的代码、知名开源项目或团队内部项目）。如果不是，请先检查此目录下的内容。",
-  "trust.capabilities": "MiMo Code 将能够读取、编辑和执行此目录中的文件。",
+  "trust.capabilities": "Viking Code 将能够读取、编辑和执行此目录中的文件。",
   "trust.plugin_warn": "如果此目录中存在恶意插件，它们可以执行任意代码、读取、修改或窃取你的文件。",
   "trust.option.yes": "是的，我信任此目录",
   "trust.option.no": "否，退出",
@@ -602,7 +602,7 @@ export const dict = {
   "trust.dangerous.option.no": "退出（推荐）",
   "skip_permissions.title": "警告：跳过权限确认模式",
   "skip_permissions.body":
-    "你使用 --dangerously-skip-permissions 启动。MiMo Code 将在不征求同意的情况下读取、修改、执行文件并运行 Shell 命令。只有你在配置中明确拒绝（deny）的规则仍然生效。由此产生的一切后果由你自行承担。",
+    "你使用 --dangerously-skip-permissions 启动。Viking Code 将在不征求同意的情况下读取、修改、执行文件并运行 Shell 命令。只有你在配置中明确拒绝（deny）的规则仍然生效。由此产生的一切后果由你自行承担。",
   "skip_permissions.plugin_warn":
     "在此模式下，恶意的提示词、文件或插件可以在无任何确认的情况下执行任意命令，并修改或窃取你的数据。",
   "skip_permissions.root_warn":

@@ -58,7 +58,7 @@ export const dict = {
   "tui.tips.doc": "{highlight}/doc{/highlight} を実行してユーザードキュメントを開きます",
   "tui.tips.free_models": "期間限定で無料モデルを提供中。今すぐお試しください！",
   "tui.tips.free_api_sunset":
-    "無料 API サービスは終了しました。{highlight}/login{/highlight} でログインしてください。MiMo Token Plan を購読するか、サードパーティ API を設定して MiMo Code をご利用ください。",
+    "無料 API サービスは終了しました。{highlight}/login{/highlight} でログインしてください。MiMo Token Plan を購読するか、サードパーティ API を設定して Viking Code をご利用ください。",
   "tui.tips.multi_skills":
     "1 つのメッセージ内で複数の {highlight}/skill-name{/highlight} を組み合わせて、複数の Skill を同時に使えます",
   "tui.tips.ask_slash_commands":
@@ -187,7 +187,7 @@ export const dict = {
     "{highlight}tui.json{/highlight} の {highlight}scroll_acceleration{/highlight} を有効にすると macOS 風のなめらかなスクロールになります",
   "tui.tips.username_toggle":
     "コマンドパレット（{highlight}Ctrl+P{/highlight}）でチャット内のユーザー名表示を切り替えます",
-  "tui.tips.zen": "MiMo Code と組み合わせて {highlight}/connect{/highlight} で厳選されたモデルを使えます",
+  "tui.tips.zen": "Viking Code と組み合わせて {highlight}/connect{/highlight} で厳選されたモデルを使えます",
   "tui.tips.agents_md": "プロジェクトの {highlight}AGENTS.md{/highlight} を Git にコミットしてチームで共有します",
   "tui.tips.review": "{highlight}/review{/highlight} で未コミット変更、ブランチ、PR をレビューします",
   "tui.tips.help": "{highlight}/help{/highlight} または {highlight}Ctrl+X H{/highlight} でヘルプを表示します",
@@ -329,7 +329,7 @@ export const dict = {
   "tui.dialog.agreement.confirm": "同意して続行",
   "tui.dialog.free_api_sunset.title": "無料 API サービスは終了しました",
   "tui.dialog.free_api_sunset.message":
-    "/login でログインしてください。MiMo Token Plan を購読するか、サードパーティ API を設定して MiMo Code をご利用ください。",
+    "/login でログインしてください。MiMo Token Plan を購読するか、サードパーティ API を設定して Viking Code をご利用ください。",
   "tui.command.consent.revoke.title": "無料モデルの同意を取り消す",
   "tui.consent.revoked": "無料モデルの同意を取り消しました — 次回利用時に再度同意を求めます",
   "tui.dialog.select.placeholder": "検索",
@@ -531,7 +531,7 @@ export const dict = {
   // Workspace trust
   "trust.title": "ワークスペースにアクセス中：",
   "trust.safety_check": "安全確認：これはあなたが作成した、または信頼しているプロジェクトですか？（自分のコード、有名なオープンソースプロジェクト、チームの作業など）。そうでない場合は、まずこのフォルダの内容を確認してください。",
-  "trust.capabilities": "MiMo Code はここでファイルの読み取り、編集、実行が可能になります。",
+  "trust.capabilities": "Viking Code はここでファイルの読み取り、編集、実行が可能になります。",
   "trust.plugin_warn": "このディレクトリに悪意あるプラグインが存在する場合、任意のコードを実行し、ファイルを読み取り、変更、または流出させる可能性があります。",
   "trust.option.yes": "はい、このフォルダを信頼します",
   "trust.option.no": "いいえ、終了",
@@ -545,7 +545,7 @@ export const dict = {
   "trust.dangerous.option.no": "終了（推奨）",
   "skip_permissions.title": "警告: パーミッションスキップモード",
   "skip_permissions.body":
-    "--dangerously-skip-permissions を指定して起動しました。MiMo Code は承認を求めずにファイルの読み取り・編集・実行やシェルコマンドの実行を行います。設定で明示的に拒否（deny）したルールのみが引き続き適用されます。発生したいかなる結果についてもあなた自身が全責任を負います。",
+    "--dangerously-skip-permissions を指定して起動しました。Viking Code は承認を求めずにファイルの読み取り・編集・実行やシェルコマンドの実行を行います。設定で明示的に拒否（deny）したルールのみが引き続き適用されます。発生したいかなる結果についてもあなた自身が全責任を負います。",
   "skip_permissions.plugin_warn":
     "このモードでは、悪意のあるプロンプト・ファイル・プラグインが一切の確認なしに任意のコマンドを実行し、データを改ざんまたは持ち出す可能性があります。",
   "skip_permissions.root_warn":

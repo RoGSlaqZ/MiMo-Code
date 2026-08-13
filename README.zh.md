@@ -4,7 +4,7 @@
   <img src="assets/readme/mimocode-banner.png" alt="MiMoCode" width="700">
 </p>
 
-<p align="center"><strong>MiMo Code: Where Models and Agents Co-Evolve</strong></p>
+<p align="center"><strong>Viking Code: Where Models and Agents Co-Evolve</strong></p>
 
 <p align="center">
   中文 | <a href="README.md">English</a>

@@ -42,7 +42,7 @@ await Bun.file(`./dist/${pkg.name}/package.json`).write(
     {
       name: pkg.name,
       version: version,
-      description: "MiMo Code: Where Models and Agents Co-Evolve",
+      description: "Viking Code: Where Models and Agents Co-Evolve",
       license: "MIT",
       author: "Xiaomi MiMo Team",
       homepage: "https://mimo.xiaomi.com/coder",
